@@ -164,3 +164,93 @@ a{
 .box p{
     line-height: 25px
 }
+.services-content{
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+/* style about class */
+.about{
+    text-align: center;
+    padding: 100px 0px;
+}
+.about-header h2{
+    margin-bottom: 12px;
+    font-size: 4vw;
+    color: #474747;
+    
+}
+.about-header p {
+    font-size: 2.5vw;
+    color: #858585;
+}
+.about-content{
+    border-top: 1px solid rgba(144, 144, 144, 0.25);
+    border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+    padding: 50px 0px;
+    width: 90%;
+    margin:60px auto;
+}
+.about-content>*{
+    float: left;
+}
+.about-content::after,
+.about-content::before{
+    content: '';
+    display: block;
+    clear: both;
+}
+.profile{
+    width: calc(100% / 4 - 20px);
+    padding: 0px 10px;
+}
+
+.profile img{
+    border-radius: 100%;
+    float: left;
+}
+.profile h4{
+    margin-top: 20px;
+}
+.profile p{
+    margin-top: 10px;
+    line-height: 25px;
+}
+/* style about content class */
+.about-footer{
+    width: 65%;
+    margin: 0px auto;
+}
+.about-footer p {
+    line-height: 25px;
+    font-size: 1.8vw; 
+    margin: 25px 0px;
+}
+/* style contact */
+.contacts{
+    background-color: #3cadd4;
+    padding: 100px 0px;
+}
+.contact-header{
+    color: #fff;
+    text-align: center;
+}
+.contact-header h2{
+    margin-bottom: 12px;
+    font-size: 4vw;
+}
+.contact-header p {
+    font-size: 2.5vw;
+}
+
+@media only screen and (max-width: 835px) {
+    .box{
+        width: 100%;
+        padding: 60px 10px;
+        margin: 15px 0px;
+    }
+    .profile{
+        width: calc(100% / 2 - 30px);
+    }
+}
