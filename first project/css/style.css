@@ -285,3 +285,18 @@ textarea{
     color:  #858585;
     font-size: 15px;
 }
+/* ------------------------------------------- style footer ----------------------------------------- */
+.footer{
+    background-color: #383b43;   
+    padding: 100px 0px;
+}
+.copyright li{
+    display: inline;
+    color:#858585 ;
+    margin: 0px 5px;
+    font-size: 15px;
+    font-family:"Raleway" ;
+}
+.copyright li a{
+    color: #a0a0a0;
+}
