@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,7 +12,8 @@
         <header>
             <nav class="header">
                 <img  src="images/logo-black.png" alt="logo" class="header-logo">
-                <ul>
+                <button class="heder-menu-burger" onclick="showMenu()"><i class="fa-solid fa-bars" id="icon"></i></button>
+                <ul class="header-menu" id="menu">
                     <li class="header-menu-itme"><a class="header-menu-item-link" href="#">ICON CLAEDER</a></li>
                     <li class="header-menu-itme"><a class="header-menu-item-link" href="#">EXPLAINED</a></li>
                     <li class="header-menu-itme"><a class="header-menu-item-link" href="#">EVENTS</a></li>
@@ -21,7 +23,22 @@
             </nav>
         </header>
     </section>
-    <h2 class="title">title</h2>
-    <footer class="footer"></footer>
+    <footer>
+    </footer>
+    <script>
+        function showMenu(){
+            var menu = document.getElementById("menu");
+            var icon = document.getElementById('icon');
+            
+            if (menu.className === 'header-menu'){
+                menu.className += " show";
+                icon.className =  "fa-solid fa-xmark"
+            }
+            else{
+                menu.className = "header-menu";
+                icon.className = "fa-solid fa-bars"
+            }
+        }
+    </script>
 </body>
 </html>

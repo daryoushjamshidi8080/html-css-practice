@@ -4,6 +4,20 @@
     font-size: 14px;
     color: #333;
 }
+a{
+    text-decoration: none;
+    transition: all .2s;
+}
+b{
+    transition: all .2s;
+    font-weight: 700;
+}
+a:hover{
+    color: #F9B500;
+}
+a:hover > b{
+    color: #F9B500;
+}
 .clear-fix{
     clear: both;
 }
@@ -13,6 +27,7 @@
 .positon-absolute{
     position: absolute;
 }
+/* style class title  */
 .title{
     position: relative;
     padding-bottom: 20px;   
@@ -38,4 +53,109 @@
     height: 5px;
     background: #F9B500;
     z-index: 1;
+}
+/* style class article title  */
+.article-title{
+    padding-top: 20px;
+}
+.article-title a{
+    font-size: 20px;
+    font-weight: 700;
+}
+.info-bar{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+.info-bar li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 25px;
+}
+/* style  class color */
+.text-muted{
+    color: #888;
+}
+.text-yello{
+    color: #F9B500 ;
+}
+.show{
+    display: inline-block !important;
+}
+/* style section tags (class app) */
+.app{
+    width: 1200px;
+}
+/* --------------------------------- style header ------------------------------ */
+.header-logo{
+    float: left ;
+    margin: 30px 0;
+}
+.header-menu{
+    float: right;
+}
+.header-menu-itme{
+    display: inline;
+}
+.header-menu-item-link  {
+    padding: 0px 10px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #333;
+}
+.heder-menu-burger{
+    display: none;
+    float:right;
+    background-color: white;
+    border: none;
+    margin-top: 30px;
+}
+
+
+/* medias */
+@media (max-width:1199.99px){
+    .app{
+        width: 992px;
+    }
+    /*-------------style header--------- */
+    .header-logo{
+        height: 15px;
+        margin: 32px 0px;
+    }
+    .header-menu-item-link{
+        padding: 0px 10px;
+    }
+}
+@media (max-width:991.99px){
+    .app{
+        width: 769px;
+    }
+    /* style header */
+    .header-logo{
+        height: 15px;
+        margin: 32px 0px;
+    }
+}
+@media (max-width:767.99px) {
+    .app{
+        width: 576px;
+    }
+    /*----------- style header ------------*/
+    .heder-menu-burger{
+        display: inline-block;
+    }
+    .header-menu{
+        display: none;
+        width: 100%;
+    }
+    .header-menu-itme{
+        display: block;
+        border-bottom: 1px solid #cecece;
+    }
+}
+@media (max-width:575.99px) {
+    .app{
+        width: calc(100% - 30px);
+        padding: 0px 15px;
+    }    
 }
