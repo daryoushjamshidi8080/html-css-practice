@@ -36,6 +36,7 @@ a:hover > b{
     margin-bottom: 40px;
     font-size: 18px;
     font-weight: 700;
+    margin-top: 50px;
 }
 .title::after{
     position: absolute;
