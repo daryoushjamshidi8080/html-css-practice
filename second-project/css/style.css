@@ -283,8 +283,33 @@ a:hover > b{
     font-size: 18px;
     font-weight: 700;
 }
-
-
+.subscript-from{
+    margin-top: 20px;
+    border: none;
+}
+.subscript-from-text{
+    padding:  13px 58px 13px 13px ;
+    float: left;
+    border: 1px solid #F9B500;
+    width: calc(100% - 72px);
+    z-index: 100;
+}
+.subscript-from-text:focus{
+    outline-color: #F9B500;
+}
+.btn{
+    border: none;
+    background-color: #F9B500;
+    padding: 12.9px 16px;
+    float: right;
+    margin-top: -42.9px;
+    font-weight: 700;
+    font-size: 14.5px;
+}
+.btn:hover{
+    background-color: black;
+    color: #ffffff;
+}
 
 /* medias */
 @media (max-width:1199.99px){
