@@ -334,6 +334,13 @@ a:hover > b{
         height: 15px;
         margin: 32px 0px;
     }
+    /* ----- style content ------ */
+    .main{
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+    }
 }
 @media (max-width:767.99px) {
     .app{
@@ -394,7 +401,10 @@ a:hover > b{
     .app{
         width: calc(100% - 30px);
         padding: 0px 15px;
-    }    
+    }
+    .main-news-w-50{
+        width: 100%;
+    }
 }
 
 
