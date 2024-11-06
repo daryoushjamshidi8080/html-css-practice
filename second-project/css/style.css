@@ -236,6 +236,35 @@ a:hover > b{
 .main-news-img{
     width: 100%;
 }
+.main-news-w-50{
+    width: calc(50% - 12.5px);
+    float: left;
+    margin-right: 25px;
+}
+.main-news-w-50:last-of-type{
+    margin-right: 0px;
+}
+/* --------------------style sidebar -------------- */
+.sidebar{
+    float: right;
+    width: calc(100% / 3 - 25px);
+    margin-left: 20px;
+}
+.sidebar-item{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.sidebar-list{
+    list-style: none;
+    padding: 0;
+}
+.sidebar-list-item{
+    padding: 15px 0px;
+    background-color: #F9B500 !important;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+}
+
 
 /* medias */
 @media (max-width:1199.99px){
