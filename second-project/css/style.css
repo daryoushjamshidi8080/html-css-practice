@@ -80,7 +80,7 @@ a:hover > b{
     color: #888;
 }
 .text-yellow{
-    color: #F9B500 ;
+    color: #F9B500 !important ;
 }
 .show{
     display: inline-block !important;
@@ -252,7 +252,7 @@ a:hover > b{
 }
 .sidebar-item{
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .sidebar-list{
     list-style: none;
@@ -310,6 +310,106 @@ a:hover > b{
     background-color: black;
     color: #ffffff;
 }
+/* -------------------------- footer ------------------------- */
+.footer{
+    background-color: #191919;
+}
+.bg-map{
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-row{
+    width: 100%;
+    background-color: rgba(25, 25, 25, 0.9) !important;
+}
+.footer-col{
+    float: left;
+    width: calc(100% / 3 - 30px);
+    margin-right: 30px ;
+}
+.footer-logo{
+    float: left;
+    height: 24px;
+    margin: 28px 0px;
+}
+.footer-p{
+    color: #cccccc;
+    line-height: 25px;
+    font-size: 16px;
+}
+.footer-p-padding-20px{
+    padding: 20px 0px;
+}
+.footer-section-title{
+    padding: 30px 0px;
+    font-size: 20px;
+
+}
+.footer-section-link-item {
+    margin-bottom: 20px; 
+}
+.footer-section-link-item a{
+    color: #cccccc;
+    font-size: 14px;
+}
+.footer-section-link-item a:hover{
+    color: #F9B500;
+}
+.footer-section-link-item p {
+    color: #cccccc ;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.footer-line{
+    width: 100%;
+    background-color: rgba(170, 170, 170, 0.2) ;
+    height: 1px;
+    margin-bottom: 20px;
+}
+.footer-menu{
+    float: left;
+    list-style: none;
+    width: 50%;
+    padding: 0px;
+
+}
+.footer-menu li{
+    display: inline-block;
+    padding: 0 20px 20px 0;
+}
+.footer-menu li a {
+    color: #cccccc;
+    font-size: 12px ;
+}
+.footer-menu li a:hover{
+    color: #F9B500;
+}
+.footer-social-network{
+    float: right;
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    text-align: right;
+}
+.footer-social-network li{
+    display: inline-block;
+    padding: 0px 10px 10px 0px;
+}
+.footer-social-network li a i {
+    color: #cccccc;
+}
+.hover-yellow:hover{
+    color: #F9B500;
+}
+.hover-blue:hover{
+    color: rgb(95, 95, 243);
+}
+.hover-red:hover{
+    color: rgb(247, 59, 59);
+}
+
+
 
 /* medias */
 @media (max-width:1199.99px){
@@ -395,6 +495,27 @@ a:hover > b{
     .h-md-300px{
         height: 300px;
         margin-bottom: 10px;
+    }
+    /* ---------------- footer ------------ */
+    .footer-col{
+        float: none;
+        width: calc(100% - 30px);
+        padding: 15px;
+        margin-right: 0px;
+    }
+    .footer-menu{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-menu li {
+        padding: 10px;
+    }
+    .footer-social-network{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
     }
 }
 @media (max-width:575.99px) {
