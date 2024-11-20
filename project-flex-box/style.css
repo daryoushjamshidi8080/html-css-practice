@@ -22,3 +22,33 @@
 .signup{
     margin-left: auto;
 }
+
+/* ---------------------------- style header ------------------------------ */
+.header-container{
+    color: #5995DA;
+    background: #ffc107;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+.header{
+    flex-basis: 90% ;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+}
+.header-img{
+    width: 100%;
+}
+.logo{
+    width: 50%;
+}
+
+@media  only screen and (min-width:992px) {
+    .header{
+        justify-content: space-between;
+        flex-flow: row;
+    }
+}
