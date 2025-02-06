@@ -1,0 +1,59 @@
+@media (min-width : 576px){
+    .search-icon{
+        width: 45px;
+        position: absolute;
+        right: 60px;
+        top:0;
+        bottom: 0;
+    }
+    .drop-down-menu{
+        position: absolute;
+        width: 60px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        background-color: #1eC6B6;
+        z-index: 1000;
+    }
+
+}
+
+@media (min-width: 768px){
+    .search-icon{
+        width: 60px;
+    }
+
+
+}   
+
+@media (min-width: 992px){
+    
+    .header{
+        display: flex !important;
+
+    }
+    nav ul{
+        display: flex !important   ;  
+    }
+    nav li {
+        display: inline;
+        border: 0 !important ;
+    }
+    .drop-down-menu{
+        display: none !important; 
+    }   
+    header{
+        justify-content: space-around;
+
+    }
+    .search-icon{
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px){
+    .search-icon{
+        width: 100px;
+    }
+
+}

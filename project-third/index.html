@@ -12,7 +12,59 @@
 
 <body>
 
-    
+    <header class=" header"  id="header">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="logo">
+            </a>
+        </div>
+
+
+
+        <nav>
+            <ul class="header-menu-nav show-nav" id="menu-nav">
+                <li class=" " id="menu-item1"> Home </li>
+                <li class=" " id="menu-item2"> About </li>
+                <li class=" " id="menu-item3"> Destination </li>
+                <li class=" " id="menu-item4"> Pages </li>
+                <li class=" " id="menu-item5"> Blog </li>
+                <li class=" " id="menu-item6"> Contact </li>
+            </ul>
+        </nav>
+        <div class="icon" id="menu-icon">
+            
+            <div class="search-icon d-flex ">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+            <div class="drop-down-menu d-flex" onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+
+
+        
+        
+    </header>
+
+
+
+
+    <main></main>
+    <footer></footer>
+
+    <script>
+        function showMenu(){
+            var menu_icon = document.getElementById("menu-nav"); 
+
+            if (menu_icon.className == 'header-menu-nav'){
+                menu_icon.className += ' show-nav'
+            }else{
+                menu_icon.className = 'header-menu-nav';
+            }
+        }
+    </script>
 </body>
 
 </html>
