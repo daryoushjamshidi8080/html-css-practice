@@ -16,8 +16,9 @@ function addTask(){
         li.appendChild(span)
     }
     inputBox.value = '';
-
+    saveData()
 }
+
 //  add task with Enter button
 document.addEventListener('keydown', function(e){
     if (e.key==='Enter'){
@@ -25,14 +26,23 @@ document.addEventListener('keydown', function(e){
     }
 })
 
+
 listContainer.addEventListener('click', function(e){
     if(e.target.tagName === 'LI'){
         e.target.classList.toggle('checked')
-
     }
     else if (e.target.tagName === 'SPAN'){
         e.target.parentElement.remove();
     }
+    saveData()
 }, false)
 
 
+function saveData(){
+    localStorage.setItem('data', listContainer.innerHTML);
+}
+
+function ShowTask(){
+    listContainer.innerHTML = localStorage.getItem('data');
+}
+ShowTask()
