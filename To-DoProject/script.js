@@ -1,6 +1,8 @@
 const inputBox = document.getElementById('input-bot');
 const listContainer = document.getElementById('list-container');
 
+
+// add task to list
 function addTask(){
     if(inputBox.value === ''){
         alert('You must write something!');
@@ -16,6 +18,13 @@ function addTask(){
     inputBox.value = '';
 
 }
+//  add task with Enter button
+document.addEventListener('keydown', function(e){
+    if (e.key==='Enter'){
+        addTask()
+    }
+})
+
 listContainer.addEventListener('click', function(e){
     if(e.target.tagName === 'LI'){
         e.target.classList.toggle('checked')
@@ -25,3 +34,5 @@ listContainer.addEventListener('click', function(e){
         e.target.parentElement.remove();
     }
 }, false)
+
+
